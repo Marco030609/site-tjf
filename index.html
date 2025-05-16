@@ -1,82 +1,125 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Associação TJF</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #ffffff;
-      color: #0a1f44;
-    }
-    header {
-      background: url('imagens/hero.jpg') no-repeat center/cover;
-      height: 500px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-    }
-    header h1 {
-      font-size: 3rem;
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 20px;
-      border-radius: 10px;
-    }
-    section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-    p {
-      margin-bottom: 15px;
-    }
-    footer {
-      background: #0a1f44;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TJF Educação</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
-    <h1>Todos Juntos por um Futuro</h1>
+    <div><strong>TJF Educação</strong></div>
+    <nav>
+      <a href="#quem-somos">Quem Somos</a>
+      <a href="#projeto">Nosso Projeto</a>
+      <a href="#funciona">Como Funciona</a>
+      <a href="#parceiros">Parceiros</a>
+      <a href="#faca-parte">Faça Parte</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>Quem Somos</h2>
-    <p>Proporcionamos um ambiente de aprendizado que estimula a curiosidade, o pensamento crítico e a criatividade.</p>
-    <p><strong>Visão:</strong> Ser reconhecida como referência em educação de qualidade, atuando há mais de 20 anos com excelência no estado de São Paulo.</p>
+  <section class="hero">
+    <h1>Todos por um futuro: educação acessível para todos!</h1>
+    <div class="btns">
+      <a href="#projeto">Saiba mais</a>
+      <a href="#faca-parte">Como ajudar</a>
+      <a href="#inscreva-se">Inscreva-se</a>
+    </div>
   </section>
 
-  <section>
-    <h2>Nossos Diferenciais</h2>
-    <ul>
-      <li>✅ Mais de 20 anos de atuação</li>
-      <li>✅ Equipe de professores voluntários experientes</li>
-      <li>✅ Parcerias com universidades e ONGs</li>
-      <li>✅ Apoio emocional, material e pedagógico</li>
-    </ul>
+  <section id="quem-somos">
+    <h2>Quem Somos</h2>
+    <div class="bloco">
+      <strong>Missão:</strong><br />
+      Proporcionar um ambiente de aprendizado que estimule a curiosidade, o pensamento crítico...
+    </div>
+    <div class="bloco">
+      <strong>Visão:</strong><br />
+      Ser reconhecida como referência em qualidade educacional em SP.
+    </div>
+    <div class="bloco-grid">
+      <div class="bloco">
+        <strong>Valores:</strong><br />
+        Inovação, Responsabilidade, Diversidade, Desenvolvimento pessoal, Liberdade
+      </div>
+      <div class="bloco">
+        <strong>Princípios:</strong><br />
+        Criatividade, Valorização da diversidade, Pensamento crítico, Autodeterminação
+      </div>
+    </div>
+  </section>
+
+  <section id="projeto">
+    <h2>Nosso Projeto</h2>
+    <div class="bloco">
+      Apoio a estudantes de baixa renda com foco no ENEM e vestibulares:
+      <ul>
+        <li>Cursos gratuitos</li>
+        <li>Aulas com professores voluntários</li>
+        <li>Material didático</li>
+        <li>Apoio emocional e pedagógico</li>
+      </ul>
+    </div>
+    <div class="bloco">
+      Atividades-chave:
+      <ul>
+        <li>Grupo de estudos</li>
+        <li>Clube de leitura</li>
+        <li>Educação de liderança</li>
+        <li>Oficinas</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="funciona">
+    <h2>Como Funciona</h2>
+    <div class="bloco-grid">
+      <div class="bloco">
+        <strong>Recursos:</strong><br />
+        Materiais, Professores, Equipamentos
+      </div>
+      <div class="bloco">
+        <strong>Custos:</strong><br />
+        Aluguel, Alimentação, Transporte, Materiais
+      </div>
+    </div>
+    <div class="bloco">
+      <strong>Canais de contato:</strong><br />
+      Redes sociais, E-mail, Telefone
+    </div>
+  </section>
+
+  <section id="parceiros">
+    <h2>Parceiros</h2>
+    <div class="bloco">
+      Universidades, Escolas públicas, Editoras, Bibliotecas, ONGs
+    </div>
+  </section>
+
+  <section id="faca-parte">
+    <h2>Faça Parte</h2>
+    <div class="bloco-grid">
+      <div class="bloco">💸 Doações</div>
+      <div class="bloco">🤝 Voluntariado</div>
+      <div class="bloco">🏫 Parcerias institucionais</div>
+    </div>
+  </section>
+
+  <section id="reconhecimento">
+    <h2>Reconhecimento</h2>
+    <div class="bloco">
+      Ações da TJF já impactaram centenas de alunos e comunidades.
+    </div>
+    <div class="bloco">
+      Feedbacks de alunos e professores.
+    </div>
   </section>
 
   <footer>
-    <p>Associação TJF — Salto, SP | contato@tjf.org.br</p>
-    <p>&copy; 2025 Todos os direitos reservados</p>
+    <p>📍 Endereço - São Paulo, SP</p>
+    <p>📧 contato@tjf.org</p>
+    <p>📱 @tjf_educacao | 📞 (11) 99999-9999</p>
+    <p>💡 Créditos: Projeto escolar TJF</p>
   </footer>
-
 </body>
 </html>
