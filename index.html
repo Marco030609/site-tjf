@@ -5,129 +5,176 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Associação TJF</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
       background-color: #ffffff;
       color: #0a1f44;
+      line-height: 1.6;
     }
     header {
-      background: url('imagens/layout-hero.png') center/cover no-repeat;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background: linear-gradient(to right, #0a1f44, #123c8b);
       color: white;
-      text-shadow: 1px 1px 5px black;
+      padding: 100px 20px;
       text-align: center;
     }
     header h1 {
       font-size: 3rem;
-      background-color: rgba(0,0,0,0.5);
-      padding: 20px;
-      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+    .cta {
+      margin-top: 30px;
+      background: #facc15;
+      color: #0a1f44;
+      font-weight: 600;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .cta:hover {
+      background: #ffe85e;
     }
     section {
       max-width: 1100px;
       margin: auto;
       padding: 60px 20px;
     }
-    .flex {
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: #f4f4f4;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #123c8b;
+    }
+    .icons {
       display: flex;
       flex-wrap: wrap;
-      gap: 40px;
-      align-items: center;
-    }
-    .flex img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 10px;
-    }
-    .box-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      justify-content: center;
       gap: 20px;
-      margin-top: 30px;
+      margin-top: 40px;
     }
-    .box {
+    .icon-box {
       background-color: #0a1f44;
       color: white;
       padding: 20px;
       border-radius: 10px;
       text-align: center;
-      font-weight: bold;
-      text-decoration: none;
+      width: 180px;
+      font-weight: 600;
+      transition: transform 0.3s ease;
+    }
+    .icon-box:hover {
+      transform: scale(1.05);
     }
     footer {
-      background-color: #0a1f44;
+      background: #0a1f44;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Todos Juntos por um Futuro</h1>
+    <p>Transformando vidas por meio de educação gratuita, acessível e de qualidade. Seja parte dessa mudança.</p>
+    <button class="cta">Quero participar</button>
   </header>
 
   <section>
-    <div class="flex">
-      <img src="imagens/layout-hero.png" alt="Quem Somos" />
-      <div>
-        <h2>Quem Somos</h2>
-        <p>Proporcionamos um ambiente de aprendizado que estimula a curiosidade, o pensamento crítico e a criatividade.</p>
-        <h2>Visão</h2>
-        <p>Ser reconhecida como referência em educação de qualidade, alcançando alunos em todo o estado de São Paulo.</p>
+    <h2>Quem Somos</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Missão</h3>
+        <p>Proporcionar um ambiente de aprendizado que estimula a curiosidade, o pensamento crítico e a criatividade.</p>
+      </div>
+      <div class="card">
+        <h3>Visão</h3>
+        <p>Ser reconhecida como referência em qualidade educacional, alcançando alunos por todo o estado de São Paulo.</p>
+      </div>
+      <div class="card">
+        <h3>Valores</h3>
+        <p>Inovação, responsabilidade, diversidade, desenvolvimento pessoal, liberdade.</p>
       </div>
     </div>
   </section>
 
   <section>
-    <div class="flex">
-      <div>
-        <h2>Nosso Projeto</h2>
-        <p>Oferecemos apoio a estudantes de baixa renda com foco no ENEM e vestibulares:</p>
-        <ul>
-          <li>Cursos gratuitos</li>
-          <li>Professores voluntários</li>
-          <li>Material didático</li>
-          <li>Apoio emocional e pedagógico</li>
-        </ul>
+    <h2>Nosso Projeto</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Cursos Gratuitos</h3>
+        <p>Preparação para ENEM e vestibulares com materiais atualizados e acompanhamento individual.</p>
       </div>
-      <img src="imagens/layout-hero.png" alt="Nosso Projeto" />
+      <div class="card">
+        <h3>Professores Voluntários</h3>
+        <p>Equipe de educadores engajada em impactar vidas com dedicação e empatia.</p>
+      </div>
+      <div class="card">
+        <h3>Apoio Completo</h3>
+        <p>Mentorias, apoio emocional e oficinas de desenvolvimento pessoal e liderança.</p>
+      </div>
     </div>
   </section>
 
   <section>
     <h2>Como Funciona</h2>
-    <div class="box-grid">
-      <a class="box" href="#">📘<br>Materiais de estudo</a>
-      <a class="box" href="#">👨‍🏫<br>Professores voluntários</a>
-      <a class="box" href="#">💻<br>Equipamentos eletrônicos</a>
-      <a class="box" href="#">📊<br>Estrutura de custos</a>
+    <div class="icons">
+      <div class="icon-box">📘 Materiais de estudo</div>
+      <div class="icon-box">👨‍🏫 Professores voluntários</div>
+      <div class="icon-box">💻 Estrutura tecnológica</div>
+      <div class="icon-box">📊 Prestação de contas</div>
     </div>
   </section>
 
   <section>
-    <div class="flex">
-      <div>
-        <h2>Parceiros</h2>
-        <ul>
-          <li>Universidades e escolas públicas</li>
-          <li>Editores e bibliotecas</li>
-          <li>ONGs</li>
-        </ul>
-        <a class="box" style="display: inline-block; margin-top: 20px;" href="#">Saiba mais</a>
+    <h2>Parceiros</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Universidades & Escolas</h3>
+        <p>Atuamos em rede com instituições públicas e privadas que acreditam na transformação pela educação.</p>
       </div>
-      <img src="imagens/layout-hero.png" alt="Parceiros" />
+      <div class="card">
+        <h3>Editoras & Bibliotecas</h3>
+        <p>Distribuição de livros, acesso a bibliotecas e parcerias para ampliar o repertório dos estudantes.</p>
+      </div>
+      <div class="card">
+        <h3>ONGs & Apoiadores</h3>
+        <p>Juntos com organizações sociais para garantir mais alcance e impacto positivo.</p>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>Associação TJF — Salto, SP | contato@tjf.org.br</p>
-    <p>&copy; 2025 Todos os direitos reservados</p>
+    <p>Associação TJF — Salto, SP | contato@tjf.org.br | © 2025 Todos os direitos reservados</p>
   </footer>
+
 </body>
 </html>
