@@ -9,6 +9,7 @@
       --azul: #0a1f44;
       --branco: #ffffff;
       --cinza: #f4f4f4;
+      --destaque: #facc15;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Segoe UI', sans-serif; background-color: var(--branco); color: var(--azul); line-height: 1.6; }
@@ -22,6 +23,9 @@
     .icons { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px; }
     .icons a { background-color: var(--azul); color: white; padding: 20px; border-radius: 10px; text-decoration: none; font-weight: bold; flex: 1 1 180px; text-align: center; transition: background 0.3s; }
     .icons a:hover { background-color: #123c8b; }
+    .team { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px; }
+    .team .member { background-color: var(--cinza); padding: 20px; border-radius: 10px; text-align: center; flex: 1 1 200px; }
+    .team .member.highlight { background-color: var(--destaque); color: var(--azul); font-weight: bold; }
     footer { background-color: var(--azul); color: var(--branco); text-align: center; padding: 30px 20px; }
   </style>
 </head>
@@ -70,15 +74,37 @@
     </div>
   </section>
 
+  <section id="equipe">
+    <h2>Equipe Executiva</h2>
+    <div class="team">
+      <div class="member highlight">
+        <p>Maysa</p>
+        <p>CEO</p>
+      </div>
+      <div class="member">
+        <p>Sara</p>
+        <p>CEO</p>
+      </div>
+      <div class="member">
+        <p>Rayane</p>
+        <p>CEO</p>
+      </div>
+      <div class="member">
+        <p>Samara</p>
+        <p>CEO</p>
+      </div>
+    </div>
+  </section>
+
   <section id="contato">
     <h2>Contato</h2>
     <div class="content">
-      <p>Salto, SP | contato@tjf.org.br | (11) 99999-9999</p>
+      <p>Salto, SP | contato@tjf.org.br | (11) 99999-9999</p>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Associação TJF – Todos os direitos reservados</p>
+    <p>&copy; 2025 Associação TJF – Todos os direitos reservados</p>
   </footer>
 </body>
 </html>
