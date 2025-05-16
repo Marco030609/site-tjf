@@ -1,1 +1,91 @@
-[HTML_CONTENT_FROM_CANMORE_WILL_BE_INSERTED_HERE]
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Associação TJF</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root { --azul: #0a1f44; --branco: #ffffff; --cinza: #f4f4f4; --botao: #2f4f6f; }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Segoe UI',sans-serif;color:var(--azul);line-height:1.6;}
+    header{background: var(--azul) url('https://source.unsplash.com/1600x400/?bookshelf,dark') center/cover no-repeat;padding:60px 20px;position:relative;display:flex;align-items:center;}
+    header::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.6);}
+    .header-content{position:relative;display:flex;align-items:center;width:100%;}
+    .header-content img.logo{width:120px;margin-right:30px;}
+    .header-content .hero-text{font-size:2rem;color:var(--branco);max-width:600px;line-height:1.2;}
+    .hero-button{position:relative;width:100%;display:flex;justify-content:center;margin-top:20px;}
+    .hero-button button{background:var(--botao);color:var(--branco);border:none;padding:12px 24px;border-radius:5px;font-size:1rem;cursor:pointer;}
+    section{max-width:1100px;margin:40px auto;padding:0 20px;}
+    .two-col{display:flex;flex-wrap:wrap;gap:40px;align-items:center;}
+    .two-col img{width:100%;max-width:500px;border-radius:10px;}
+    .two-col .text{flex:1;}
+    h2{font-size:1.8rem;margin-bottom:15px;}
+    ul{list-style:disc inside;margin-top:10px;}
+    .icons{display:flex;flex-wrap:wrap;gap:20px;margin-top:20px;}
+    .icons .icon-box{background:var(--azul);color:var(--branco);flex:1 1 150px;min-width:150px;padding:20px;border-radius:8px;text-align:center;font-weight:bold;font-size:0.9rem;}
+    footer{background:var(--azul);color:var(--branco);text-align:center;padding:20px;margin-top:40px;}
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-content">
+    <img src="imagens/logo.png" alt="Logo TJF" class="logo">
+    <div class="hero-text">Todos por um futuro: educação acessível para todos!</div>
+  </div>
+</header>
+<div class="hero-button"><button>Saiba mais</button></div>
+
+<section id="quemsomos">
+  <div class="two-col">
+    <img src="https://source.unsplash.com/600x400/?student,laptop" alt="Quem Somos">
+    <div class="text">
+      <h2>Quem Somos</h2>
+      <p>A TJF é uma associação sem fins lucrativos com mais de 20 anos de atuação em educação social. Nossa missão é transformar vidas por meio de programas gratuitos de apoio escolar, preparatórios para vestibulares e ENEM, sempre focados na inclusão e no desenvolvimento integral do aluno.</p>
+      <h2>Visão</h2>
+      <p>Ser reconhecida como referência em qualidade educacional, alcançando alunos por todo o estado de São Paulo.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projeto">
+  <div class="two-col">
+    <div class="text">
+      <h2>Nosso Projeto</h2>
+      <p>Apolo academico</p>
+      <ul>
+        <li>Cursos onauitios sa udidar congedrame</li>
+        <li>Materiais didático</li>
+        <li>Apoio emocional e pedagógico</li>
+        <li>Esfrutura</li>
+      </ul>
+    </div>
+    <img src="https://source.unsplash.com/600x400/?teacher,classroom" alt="Nosso Projeto">
+  </div>
+</section>
+
+<section id="funciona">
+  <h2>Como Funciona</h2>
+  <div class="icons">
+    <div class="icon-box"><i class="fa-solid fa-book-open"></i><br>Materiais de estudo</div>
+    <div class="icon-box"><i class="fa-solid fa-chalkboard-user"></i><br>Professores voluntários</div>
+    <div class="icon-box"><i class="fa-solid fa-computer"></i><br>Equipamentos eletrônicos</div>
+    <div class="icon-box"><i class="fa-solid fa-sitemap"></i><br>Estrutura</div>
+  </div>
+</section>
+
+<section id="parceiros">
+  <div class="two-col">
+    <img src="https://source.unsplash.com/600x400/?partnership,meeting" alt="Parceiros">
+    <div class="text">
+      <h2>Parceiros</h2>
+      <p>Universidades e escolas públicas<br>Editoras e bibliotecas<br>ONGs</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Associação TJF – Todos os direitos reservados</p>
+</footer>
+</body>
+</html>
